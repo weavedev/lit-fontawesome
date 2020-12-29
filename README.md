@@ -1,1 +1,44 @@
 # lit-fontawesome
+
+[![Build Status - Travis CI](https://img.shields.io/travis/weavedev/lit-fontawesome.svg)](https://travis-ci.org/weavedev/lit-fontawesome)
+[![Test Coverage - Code Climate](https://img.shields.io/codeclimate/coverage/weavedev/lit-fontawesome.svg)](https://codeclimate.com/github/weavedev/lit-fontawesome/test_coverage)
+[![MIT](https://img.shields.io/github/license/weavedev/lit-fontawesome.svg)](https://github.com/weavedev/lit-fontawesome/blob/master/LICENSE)
+[![NPM](https://img.shields.io/npm/v/@weavedev/lit-fontawesome.svg)](https://www.npmjs.com/package/@weavedev/lit-fontawesome)
+
+Description description description
+
+## Install
+
+```
+npm i @weavedev/lit-fontawesome
+```
+
+## API documentation
+
+We generate API documentation with [TypeDoc](https://typedoc.org).
+
+[![API Documentation](https://img.shields.io/badge/API-Documentation-blue?style=for-the-badge&logo=typescript)](https://weavedev.github.io/lit-fontawesome/)
+
+## Usage
+
+### Heading
+
+Explain
+
+```ts
+import { code } from 'here';
+```
+
+### Heading
+
+Explain
+
+```ts
+import { code } from 'here';
+```
+
+## License
+
+[MIT](https://github.com/weavedev/lit-fontawesome/blob/master/LICENSE)
+
+Made by [Paul Gerarts](https://github.com/gerarts) and [Weave](https://weave.nl)
