@@ -5,7 +5,7 @@
 [![MIT](https://img.shields.io/github/license/weavedev/lit-fontawesome.svg)](https://github.com/weavedev/lit-fontawesome/blob/master/LICENSE)
 [![NPM](https://img.shields.io/npm/v/@weavedev/lit-fontawesome.svg)](https://www.npmjs.com/package/@weavedev/lit-fontawesome)
 
-Description description description
+Convert Fontawesome SVG definitions to LitElement compatible SVGs and data URLs for inline use and in CSS
 
 ## Install
 

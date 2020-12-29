@@ -1,7 +1,7 @@
 {
   "name": "@weavedev/lit-fontawesome",
   "version": "0.2.0",
-  "description": "Description description description",
+  "description": "Convert Fontawesome SVG definitions to LitElement compatible SVGs and data URLs for inline use and in CSS",
   "main": "dist/litFontawesome.js",
   "types": "dist/litFontawesome.d.ts",
   "scripts": {
