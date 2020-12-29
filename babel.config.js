@@ -1,14 +1,13 @@
-{
+module.exports = {
     "env": {
         "test": {
             "presets": [
-                ["env", { "modules": "commonjs" }]
+                ["@babel/preset-env", { "modules": "commonjs" }]
             ]
         }
     },
     "plugins": [
-        ["transform-runtime", {
-            "polyfill": false,
+        ["@babel/plugin-transform-runtime", {
             "regenerator": true
         }]
     ]

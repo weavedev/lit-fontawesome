@@ -84,16 +84,41 @@
 				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
 					<h2>Usage</h2>
 				</a>
-				<a href="#heading" id="heading" style="color: inherit; text-decoration: none;">
-					<h3>Heading</h3>
+				<a href="#icons-in-your-css-and-html" id="icons-in-your-css-and-html" style="color: inherit; text-decoration: none;">
+					<h3>Icons in your CSS and HTML</h3>
 				</a>
-				<p>Explain</p>
-				<pre><code class="language-ts"><span class="hljs-keyword">import</span> { code } <span class="hljs-keyword">from</span> <span class="hljs-string">'here'</span>;</code></pre>
-				<a href="#heading-1" id="heading-1" style="color: inherit; text-decoration: none;">
-					<h3>Heading</h3>
+				<p>You can use the Fontawesome icons in your HTML as inline SVGs, and in your CSS as data URLs.</p>
+				<pre><code class="language-ts"><span class="hljs-keyword">import</span> { css, html } <span class="hljs-keyword">from</span> <span class="hljs-string">'lit-element'</span>;
+
+<span class="hljs-keyword">import</span> { faCoffee } <span class="hljs-keyword">from</span> <span class="hljs-string">'@fortawesome/free-solid-svg-icons/faCoffee'</span>;
+<span class="hljs-keyword">import</span> { litFontawesome, urlFontawesome } <span class="hljs-keyword">from</span> <span class="hljs-string">'@weavedev/lit-fontawesome'</span>;
+
+<span class="hljs-comment">// Use it in your CSS</span>
+css`<span class="css">
+    <span class="hljs-selector-class">.myCoffeeIcon</span> {
+        <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">'</span></span><span class="hljs-subst">${urlFontawesome(faCoffee)}</span><span class="css"><span class="hljs-string">'</span>);
+    }
+`</span>;
+
+<span class="hljs-comment">// Use it in your HTML</span>
+html`<span class="xml">
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span></span><span class="hljs-subst">${litFontawesome(faCoffee)}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+`</span>;</code></pre>
+				<a href="#options" id="options" style="color: inherit; text-decoration: none;">
+					<h3>Options</h3>
 				</a>
-				<p>Explain</p>
-				<pre><code class="language-ts"><span class="hljs-keyword">import</span> { code } <span class="hljs-keyword">from</span> <span class="hljs-string">'here'</span>;</code></pre>
+				<p>Set custom colors and class-names</p>
+				<pre><code class="language-ts">litFontawesome(
+    faCoffee, <span class="hljs-comment">// Icon</span>
+    <span class="hljs-comment">// Options</span>
+    {
+        <span class="hljs-comment">// Custom class-names</span>
+        className: <span class="hljs-string">'myClassName'</span>,
+
+        <span class="hljs-comment">// Custom colors</span>
+        color: <span class="hljs-string">'palevioletred'</span>
+    }
+);</code></pre>
 				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
 					<h2>License</h2>
 				</a>

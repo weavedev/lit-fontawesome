@@ -21,20 +21,45 @@ We generate API documentation with [TypeDoc](https://typedoc.org).
 
 ## Usage
 
-### Heading
+### Icons in your CSS and HTML
 
-Explain
+You can use the Fontawesome icons in your HTML as inline SVGs, and in your CSS as data URLs.
 
 ```ts
-import { code } from 'here';
+import { css, html } from 'lit-element';
+
+import { faCoffee } from '@fortawesome/free-solid-svg-icons/faCoffee';
+import { litFontawesome, urlFontawesome } from '@weavedev/lit-fontawesome';
+
+// Use it in your CSS
+css`
+    .myCoffeeIcon {
+        background-image: url('${urlFontawesome(faCoffee)}');
+    }
+`;
+
+// Use it in your HTML
+html`
+    <div>${litFontawesome(faCoffee)}</div>
+`;
 ```
 
-### Heading
+### Options
 
-Explain
+Set custom colors and class-names
 
 ```ts
-import { code } from 'here';
+litFontawesome(
+    faCoffee, // Icon
+    // Options
+    {
+        // Custom class-names
+        className: 'myClassName',
+        
+        // Custom colors
+        color: 'palevioletred'
+    }
+);
 ```
 
 ## License
