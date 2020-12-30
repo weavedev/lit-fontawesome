@@ -17,3 +17,8 @@ coverage/
 config.gypi
 CVS
 npm-debug.log
+.travis.yml
+babel.config.js
+typedoc.js
+.gitattributes
+.codeclimate.yml
