@@ -17,14 +17,13 @@ export function litFontawesome(definition: IconDefinition, { className, color }:
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 ${definition.icon[0]} ${definition.icon[1]}"
             class="${className || ''} ${definition.prefix}_${definition.iconName} fa-${definition.iconName}"
+            fill="${color || 'currentColor'}"
         >
-            <g fill="${color || 'currentColor'}">
-                ${
-                    (Array.isArray(definition.icon[4]) ? definition.icon[4] : [definition.icon[4]]).map(
-                        (icon: string): SVGTemplateResult => svg`<path d="${icon}"></path>`,
-                    )
-                }
-            </g>
+            ${
+                (Array.isArray(definition.icon[4]) ? definition.icon[4] : [definition.icon[4]]).map(
+                    (icon: string): SVGTemplateResult => svg`<path d="${icon}"></path>`,
+                )
+            }
         </svg>
     `;
 }
